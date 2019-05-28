@@ -17,7 +17,7 @@
 		CCC22EBD229D5FEF00CDA7C7 /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC22EA7229D5FEF00CDA7C7 /* CurrencyTableViewCell.swift */; };
 		CCC22EC4229D5FEF00CDA7C7 /* NetworkConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC22EB2229D5FEF00CDA7C7 /* NetworkConnection.swift */; };
 		CCC22EC5229D5FEF00CDA7C7 /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC22EB4229D5FEF00CDA7C7 /* CurrencyViewModel.swift */; };
-		CCC22EC8229D611200CDA7C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC22EC6229D611200CDA7C7 /* Main.storyboard */; };
+		CCC22ECE229D658400CDA7C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC22ECC229D658400CDA7C7 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +34,7 @@
 		CCC22EA7229D5FEF00CDA7C7 /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
 		CCC22EB2229D5FEF00CDA7C7 /* NetworkConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConnection.swift; sourceTree = "<group>"; };
 		CCC22EB4229D5FEF00CDA7C7 /* CurrencyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
-		CCC22EC7229D611200CDA7C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../MVVM/Rx Swift Sample/View/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		CCC22ECD229D658400CDA7C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD672CAB8E624ECDF8DF33F2 /* Pods-Rx Swift Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rx Swift Sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rx Swift Sample/Pods-Rx Swift Sample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,8 +112,8 @@
 		CCC22E9D229D5FEF00CDA7C7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CCC22ECC229D658400CDA7C7 /* Main.storyboard */,
 				CCC22E9E229D5FEF00CDA7C7 /* CurrencyViewController.swift */,
-				CCC22EC6229D611200CDA7C7 /* Main.storyboard */,
 				CCC22EA7229D5FEF00CDA7C7 /* CurrencyTableViewCell.swift */,
 			);
 			path = View;
@@ -195,9 +195,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCC22ECE229D658400CDA7C7 /* Main.storyboard in Resources */,
 				BAA7EED3229A8379002B6539 /* LaunchScreen.storyboard in Resources */,
 				BAA7EED0229A8379002B6539 /* Assets.xcassets in Resources */,
-				CCC22EC8229D611200CDA7C7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,10 +276,10 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		CCC22EC6229D611200CDA7C7 /* Main.storyboard */ = {
+		CCC22ECC229D658400CDA7C7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CCC22EC7229D611200CDA7C7 /* Base */,
+				CCC22ECD229D658400CDA7C7 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
