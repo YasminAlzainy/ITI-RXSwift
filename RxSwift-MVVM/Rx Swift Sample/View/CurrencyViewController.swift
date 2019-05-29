@@ -27,9 +27,9 @@ class CurrencyViewController: UIViewController {
         
         viewModel.getCurrency(url:"https://api.exchangeratesapi.io/latest")
 
-//        viewModel.dataObservable.subscribe(onNext: { (<#[String : Any]#>) in
-//            <#code#>
-//        }, onError: <#T##((Error) -> Void)?##((Error) -> Void)?##(Error) -> Void#>, onCompleted: <#T##(() -> Void)?##(() -> Void)?##() -> Void#>, onDisposed: <#T##(() -> Void)?##(() -> Void)?##() -> Void#>)
+        viewModel.dataObservable.subscribe(onNext: { (data) in
+            print(data)
+        })
     }
     
     

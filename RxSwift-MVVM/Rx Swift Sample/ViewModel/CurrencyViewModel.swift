@@ -24,9 +24,18 @@ class CurrencyViewModel: NSObject {
     }
     
     func getCurrency(url : String) {
-        networkConnection.getCurrency(url: url)
-       
+        //networkConnection.getCurrency(url: url)
         //dataSubject.onNext()
+        
+        networkConnection.executeApiJsonClient(urlString: url, httpMethod: NetworkConnection.HTTPServerMethod.get, pramaters: nil, header: nil, successHandler: { (jsonDict) in
+           
+            let currency = Currency(base: jsonDict["base"] as! String, rates: jsonDict["rates"] as! [String : Double], date: jsonDict["date"] as! String)
+            
+            self.dataSubject.onNext(currency.rates)
+            
+        }) { (error) in
+            print(error)
+        }
     }
     
 }
